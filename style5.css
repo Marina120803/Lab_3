@@ -1,0 +1,29 @@
+.newton_cradle {
+	position: absolute; bottom: 300px; left: calc(50% - 150px);
+	border: none;
+	background: #ffffff;
+	.ball:nth-child(1) { background: #8A6C5E;}
+	.ball:nth-child(2){ background: #cc6739;}
+	.ball:nth-child(3){ background: #a6ca30;}
+	.ball:nth-child(4){ background: #21a5ca;}
+	.ball:nth-child(5) { background: #4a1aa9;}
+  }
+  
+  .ball {
+	 float: left; position: relative;
+	margin-top: 100px; width: 50px; height: 50px;
+	border-radius: 100%; transform-origin: 50% -100px;
+  }
+  
+ 
+  .newton_cradle-animate
+  {
+	.ball:nth-child(1) {animation: ball1 0.5s infinite alternate 0.5s ease-out; background: #8A6C5E;}
+	.ball:nth-child(2){ background: #cc6739;}
+	.ball:nth-child(3){ background: #a6ca30;}
+	.ball:nth-child(4){ background: #21a5ca;}
+	.ball:nth-child(5) {animation: ball5 0.5s infinite alternate ease-out; background: #4a1aa9;}
+
+  }
+  @keyframes ball1 {0%,50% {transform: rotate(0);} 100% {transform: rotate(30deg);}}
+  @keyframes ball5 {0%,50% {transform: rotate(0);} 100% {transform: rotate(-30deg);}}
